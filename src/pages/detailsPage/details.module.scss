@@ -1,5 +1,5 @@
-$small: 400px;
-$medium: 900px;
+$small: 500px;
+$medium: 800px;
 
 .container {
   display: flex;
@@ -37,8 +37,17 @@ $medium: 900px;
   @media screen and (max-width: $small) {
     font-size: 18px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
   }
   @media screen and (min-width: $medium) {
     font-size: 22px;
   }
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }

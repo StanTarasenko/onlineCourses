@@ -1,4 +1,4 @@
-const coursesBaseUK = [
+const allPrograms = [
   {
     id: '1',
     title: 'Психологічна консультація',
@@ -66,6 +66,76 @@ const coursesBaseUK = [
     price: '1100',
     variants: [],
   },
+  {
+    id: '4',
+    title: 'Діагностика матриці долі',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
+  {
+    id: '5',
+    title: 'Регресивний гіпноз',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
+  {
+    id: '6',
+    title: 'Групова гра',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
+  {
+    id: '7',
+    title: 'Індивідуальна гра',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
+  {
+    id: '8',
+    title: 'Сімейна гра',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
+  {
+    id: '9',
+    title: 'Карта бажань групова',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
+  {
+    id: '10',
+    title: 'Карта бажань індивідуальна',
+    shortInfo: ``,
+    image: 'https://ucare.timepad.ru/3270b8c6-776a-4519-b613-10f0ede0ec30/-/preview/600x600/',
+    mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
+    fullInfo: ``,
+    price: '450',
+    variants: [],
+  },
 ];
 
-export default coursesBaseUK;
+export default allPrograms;

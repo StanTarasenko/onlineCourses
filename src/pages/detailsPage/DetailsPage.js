@@ -14,6 +14,8 @@ const DetailsPage = () => {
   const params = useParams();
 
   const currentCourse = coursesBaseUK.find((item) => item.id === params.courseId);
+  const text = currentCourse.fullInfo;
+  const devidedText = text.split(".");
   const navigate = useNavigate();
 
   const handlerSaveId = () => {
@@ -23,12 +25,6 @@ const DetailsPage = () => {
 
   return (
     <div className={styles['container']}>
-      <Button 
-        variant="outlined" 
-        onClick={handlerSaveId}
-        >
-          Go back
-        </Button>
       <div className={styles['title']}>
         {currentCourse.title}
       </div>
@@ -41,10 +37,20 @@ const DetailsPage = () => {
         />
       </div>
       <div className={styles['fullInfo']}>
-        {currentCourse.fullInfo}
+        {devidedText.map((item, i) => <div key={i}>
+          {item}
+        </div>)}
       </div>
-      <div>
-        Price:{currentCourse.price}.00 грн
+      <div className={styles['fullInfo']}>
+        Цiна:{currentCourse.price}.00 грн
+      </div>
+      <div className={styles['btn']}>
+        <Button 
+          variant="outlined" 
+          onClick={handlerSaveId}
+        >
+          Повернутись
+        </Button>
       </div>
     </div>)
 };
