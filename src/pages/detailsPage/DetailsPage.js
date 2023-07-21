@@ -28,6 +28,11 @@ const DetailsPage = () => {
       <div className={styles['title']}>
         {currentCourse.title}
       </div>
+      <div className={styles['container_main']} 
+        data-aos="zoom-in-left" 
+        data-aos-offset="500"
+        data-aos-duration="500"
+      >
       <div className={styles['imageBox']}>
         <Box
           component="img"
@@ -41,7 +46,8 @@ const DetailsPage = () => {
           {item}
         </div>)}
       </div>
-      <div className={styles['fullInfo']}>
+      </div>
+      <div className={styles['fullInfo']} style={{marginTop: '20px', fontWeight: 'normal'}}>
         Цiна:{currentCourse.price}.00 грн
       </div>
       <div className={styles['btn']}>

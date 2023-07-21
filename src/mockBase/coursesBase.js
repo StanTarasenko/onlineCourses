@@ -54,12 +54,12 @@ const coursesBaseUK = [
   {
     id: '3',
     title: 'Сімейна консультація',
-    shortInfo: `Консультація триває 1 годину
+    shortInfo: `Консультація триває 1 годину.
       * Ви з Вашим партнером визначаєте запит і ознайомившись з 
       правилами записуєтеся на консультацію`,
     image: 'https://holdyou.net/uploads/page_builder/730cae73171b452442db681349e831e6.jpg',
     mainImage: 'https://www.elitbuketschool.art/wp-content/uploads/2021/04/flat-lay-box-with-colorful-easter-eggs-copy-space-scaled.jpg',
-    fullInfo: `Консультація триває 1 годину
+    fullInfo: `Консультація триває 1 годину.
       * Ви з Вашим партнером визначаєте запит і ознайомившись з 
       правилами записуєтеся на консультацію.
       * Робота відбувається регулярно 1 раз на тиждень`,
