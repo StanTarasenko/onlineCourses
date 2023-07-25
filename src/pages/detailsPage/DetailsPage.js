@@ -1,8 +1,11 @@
 // Modules
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 // Data
-import coursesBaseUK from '../../mockBase/coursesBase';
+import allPrograms from '../../mockBase/allPrograms';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // MUI
 import { Button, Box } from '@mui/material';
@@ -13,7 +16,7 @@ import styles from './details.module.scss';
 const DetailsPage = () => {
   const params = useParams();
 
-  const currentCourse = coursesBaseUK.find((item) => item.id === params.courseId);
+  const currentCourse = allPrograms.find((item) => item.id === params.courseId);
   const text = currentCourse.fullInfo;
   const devidedText = text.split(".");
   const navigate = useNavigate();
@@ -22,6 +25,16 @@ const DetailsPage = () => {
     localStorage.setItem("isMemorize", true);
     navigate(-1);
   };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      AOS.init({
+        offset: 300,
+        duratation: 500,
+      })
+    }, 300)
+    return () => clearTimeout(timeout)
+  }, []);
 
   return (
     <div className={styles['container']}>
@@ -48,7 +61,7 @@ const DetailsPage = () => {
       </div>
       </div>
       <div className={styles['fullInfo']} style={{marginTop: '20px', fontWeight: 'normal'}}>
-        Цiна:{currentCourse.price}.00 грн
+        Цiна:{currentCourse.price}
       </div>
       <div className={styles['btn']}>
         <Button 

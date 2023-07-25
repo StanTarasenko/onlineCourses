@@ -11,7 +11,7 @@ import FullListPage from './pages/fullListPage/fullListPage';
 import styles from './app.scss';
 
 function App() {
-  window.sessionStorage.setItem("isLoading", true);
+  window.localStorage.setItem('isShowLoader', false);
 
   return (
     <div className={styles['app']}>

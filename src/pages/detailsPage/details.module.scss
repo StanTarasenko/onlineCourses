@@ -8,13 +8,15 @@ $medium: 800px;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, lightblue , white, lightgrey);
+  overflow: hidden;
 
   &_main {
-    display: flex;
     @media screen and (max-width: $small) {
+      display: flex;
       flex-direction: column;
     }
     @media screen and (min-width: $medium) {
+      display: flex;
       flex-direction: row;
     }
     background-color: rgba(128, 128, 128, 0.256);
@@ -38,10 +40,13 @@ $medium: 800px;
 }
 
 .imageBox {
+  display: flex;
+  justify-content: center;
+  
   &_img {
     @media screen and (max-width: $small) {
-      width: 90%;
-      height: 300px;
+      width: 80%;
+      height: 200px;
       padding: 20px;
       margin-top: 40px;
     }
@@ -54,8 +59,10 @@ $medium: 800px;
 }
 
 .fullInfo {
+  padding: 10px;
+
   @media screen and (max-width: $small) {
-    font-size: 18px;
+    font-size: 14px;
     padding: 15px;
     display: flex;
     flex-direction: column;

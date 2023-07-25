@@ -32,8 +32,7 @@ function getWindowSize() {
 const HomePage = () => {
   const isCheckId = localStorage.getItem('isMemorize');
   const [windowSize, setWindowSize] = useState(getWindowSize());
-  // const [isFullInfo, setIsFullInfo] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const isLoading = localStorage.getItem('isShowLoader');
   const [isArrowShow, setIsArrowShow] = useState(false);
 
   useEffect(() => {
@@ -61,7 +60,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setIsLoading(false);
+      localStorage.setItem('isShowLoader', true);
       AOS.init({
         offset: 300,
         duratation: 500,
@@ -79,7 +78,7 @@ useEffect(() => {
 
   return (
     <>
-      {isLoading
+      {isLoading === 'false'
       ? <Loader /> 
       : <div className={styles['container']} onScroll={() => AOS.init({
         offset: 300,
@@ -323,6 +322,7 @@ useEffect(() => {
             <div 
               className={styles['section_info_item']} 
               key={course.id} 
+              id={`section-${course.id}`}
             >
               <Box
                 component="img"
