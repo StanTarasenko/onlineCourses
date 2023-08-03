@@ -7,7 +7,6 @@ import 'aos/dist/aos.css';
 // MUI
 import { Button, Box } from '@mui/material';
 import logo from '../../icons/logoAN.jpg';
-import admin from '../../icons/pic1.JPG';
 import project from '../../icons/IMG_7667.JPG';
 import finalPic from '../../icons/IMG_7670.JPG';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
@@ -99,19 +98,52 @@ useEffect(() => {
             className={styles['customText']}
           >
             {windowSize.innerWidth > 700 && 
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-              <div style={{fontSize: "48px", color: "white", textShadow: "2px 0 black", paddingBottom: "10px"}} data-aos="fade-right"
+            <div style={{
+              display: 'flex', 
+              flexDirection: 'column', 
+              justifyContent: 'center',
+              padding: "20px",
+                }}>
+              <div style={{
+                fontSize: "52px", 
+                color: "white",  
+                paddingBottom: "10px", 
+                justifyContent: "center",
+                display: "flex",
+                fontFamily: "Snell Roundhand", 
+                fontWeight: "bold",
+                textShadow: "2px 0 black",
+              }} 
+              data-aos="fade-right"
               data-aos-duration="700"
               data-aos-easing="ease-in-sine">
                 Вітаю Вас!
               </div>
-              <div style={{fontSize: "24px", color: "white", textShadow: "1px 0 black", paddingBottom: "10px"}} data-aos="fade-right"
+              <div style={{
+                fontSize: "48px", 
+                color: "white",
+                paddingBottom: "10px",
+                display: "flex",
+                justifyContent: "center",
+                fontFamily: "Snell Roundhand", 
+                fontWeight: "bold",
+                textShadow: "2px 0 black",
+              }} data-aos="fade-right"
               data-aos-duration="700"
               data-aos-delay="700"
               data-aos-easing="ease-in-sine">
                 Мене звуть Анастасія Новікова і мені приємно, що Ви завітали на мій сайт.
               </div>
-              <div style={{fontSize: "24px", color: "white", textShadow: "1px 0 black"}} data-aos="fade-right"
+              <div style={{
+                fontSize: "36px", 
+                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                padding: "20px",
+                fontWeight: "bold",
+                textShadow: "2px 0 black",
+              }} data-aos="fade-right"
                 data-aos-duration="1500"
                 data-aos-delay="1500"
                 data-aos-easing="ease-in-sine">
@@ -125,42 +157,52 @@ useEffect(() => {
               </div>
             }
             {windowSize.innerWidth < 700 && 
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-              <div style={{ 
+            <div style={{
+              display: 'flex', 
+              flexDirection: 'column', 
+              justifyContent: 'center',
+              padding: "20px",
+                }}>
+              <div style={{
                 fontSize: "38px", 
-                color: "white", 
-                textShadow: "2px 0 black", 
+                color: "white",  
                 paddingBottom: "10px", 
-                display: 'flex', 
-                justifyContent: 'center'
-                }} 
-                data-aos="fade-right"
-                data-aos-duration="700"
-                data-aos-delay="700"
-                data-aos-easing="ease-in-sine">
+                justifyContent: "center",
+                display: "flex",
+                fontFamily: "Snell Roundhand", 
+                fontWeight: "bold",
+                textShadow: "2px 0 black",
+              }} 
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-easing="ease-in-sine">
                 Вітаю Вас!
               </div>
-              <div 
-              data-aos="fade-right"
-              data-aos-delay="700"
-              data-aos-duration="700"
-              data-aos-easing="ease-in-sine"
-              style={{display: "flex", justifyContent: "center"}}  
-            >
-              <img src={admin} 
-                alt='admin' 
-                height="50%" 
-                width="50%" 
-                style={{ borderRadius: "5px"}} 
-              />  
-            </div>
-              <div style={{fontSize: "22px", color: "white", textShadow: "1px 0 black", paddingBottom: "10px"}} data-aos="fade-right"
+              <div style={{
+                fontSize: "24px", 
+                color: "white",
+                paddingBottom: "10px",
+                display: "flex",
+                justifyContent: "center",
+                fontFamily: "Snell Roundhand", 
+                fontWeight: "bold",
+                textShadow: "2px 0 black",
+              }} data-aos="fade-right"
               data-aos-duration="700"
               data-aos-delay="700"
               data-aos-easing="ease-in-sine">
-                Мене звуть Анастасія Новікова і мені приємно, що Ви завітали на мій сайт
+                Мене звуть Анастасія Новікова і мені приємно, що Ви завітали на мій сайт.
               </div>
-              <div style={{fontSize: "22px", color: "white", textShadow: "1px 0 black"}} data-aos="fade-right"
+              <div style={{
+                fontSize: "18px", 
+                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                padding: "20px",
+                fontWeight: "bold",
+                textShadow: "2px 0 black",
+              }} data-aos="fade-right"
                 data-aos-duration="1500"
                 data-aos-delay="1500"
                 data-aos-easing="ease-in-sine">
@@ -171,9 +213,9 @@ useEffect(() => {
                   свого життя, будувати теплі та близькі стосунки і отримувати задоволення від
                   життя...
               </div>
-            </div>
+              </div>
             }
-            {windowSize.innerWidth > 700 && <div 
+            {/* {windowSize.innerWidth > 700 && <div 
               data-aos="fade-left" 
               data-aos-duration="1500" 
               data-aos-delay="1500" 
@@ -187,7 +229,7 @@ useEffect(() => {
                 style={{ borderRadius: "5px", marginRight: "20px"}} 
               />  
             </div>
-            }
+            } */}
             </div>
             <div className={styles['blobContainer']}>
               <div className={styles['blob']}>
@@ -228,7 +270,7 @@ useEffect(() => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
           >
-            ПРОЕКТ ПРОСТІР ВЗАЄМОВІДНОСИН
+            Проект простiр взаємовiдносин
           </div>
             <div style={{ 
                 marginBottom: '20px', 

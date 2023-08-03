@@ -246,6 +246,7 @@ span.customText {
       font-weight: 300;
       padding-top: 10vh;
       text-shadow: 2px 2px white;
+      font-family: Snell Roundhand, cursive;
 
       @media screen and (max-width: $small) {
         font-size: 36px;
@@ -494,6 +495,8 @@ span.customText {
   font-size: 56px;
   padding: 60px 0;
   text-shadow: 1px 1px black;
+  font-family: Snell Roundhand, cursive;
+  font-weight: bold;
 }
 
 .smallProjectHeder {
@@ -505,6 +508,8 @@ span.customText {
   font-size: 32px;
   padding: 60px 0;
   text-shadow: 1px 1px black;
+  font-family: Snell Roundhand, cursive;
+  font-weight: bold;
 }
 
 .smallProjectBody {
